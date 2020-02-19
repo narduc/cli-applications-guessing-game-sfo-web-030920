@@ -1,10 +1,10 @@
 # Code your solution here!
 def run_guessing_game
   
-  random_num = num.to_i
-  num = rand(6) + 1
+  random_num = rand(6) + 1
   puts "Please guess a number between 1 and 6"
-  guessing_num = gets.chomp
+  num = gets.chomp
+  guessing_num = num.to_i
   
   if random_num == guessing_num
     puts "You guessed the correct number!"
